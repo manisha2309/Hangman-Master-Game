@@ -1,10 +1,12 @@
 Title---->Hangman-Master-Game <br>
 This is a team project on a guessing game where one player guess the letters by suggesting some where the letter is selected by the system.
 The word is represented by a row of dashes, with each dash representing a letter in the word. The guessing player suggests letters one at a time, and if the letter is in the word, the system reveals its correct positions. If the letter is not in the word, the guessing player receives a strike. The game continues until the guessing player correctly guesses the word or accumulates too many strikes, resulting in a loss. It's a fun and challenging game that tests vocabulary and deductive skills.
+
 <br>TEAM MEMBERS <br>
 1. Jigyasa --Manager <br>
 2. Manisha --Developer <br>
 3. Manshika --Tester <br>
+
 Instructions <br>
 
 Setup: One player ( i.e.the "system") decides a word and keeps it secret. They draw a series of dashes, each representing a letter in the word.<br>
