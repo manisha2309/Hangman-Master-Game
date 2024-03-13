@@ -6,6 +6,7 @@ The word is represented by a row of dashes, with each dash representing a letter
 2. Manisha --Developer <br>
 3. Manshika --Tester <br>
 Instructions <br>
+
 Setup: One player ( i.e.the "system") decides a word and keeps it secret. They draw a series of dashes, each representing a letter in the word.<br>
 
 Guessing: The other player (the "guesser") starts guessing letters. If the guessed letter is in the word, the word chooser writes it in all the correct positions. If the guessed letter is not in the word, the word chooser adds a body part to the hangman scaffold (e.g., head, body, arms, legs).<br>
