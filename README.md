@@ -1,2 +1,3 @@
 Title---->Hangman-Master-Game <br>
-This is a team project on a guessing game where one player guess the letters by suggesting some where the letter is selected by the system.
+This is a team project on a guessing game where one player guess the letters by suggesting some where the letter is selected by the system.<br>
+Hangman Master is a classic word-guessing game where one player thinks of a word and the other player tries to guess it by suggesting letters. The word is represented by a row of dashes, with each dash representing a letter in the word. The guessing player suggests letters one at a time, and if the letter is in the word, the other player reveals its correct positions. If the letter is not in the word, the guessing player receives a strike. The game continues until the guessing player correctly guesses the word or accumulates too many strikes, resulting in a loss. It's a fun and challenging game that tests vocabulary and deductive skills.
