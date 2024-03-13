@@ -15,5 +15,5 @@ Instructions: <br>
 
 - Objective: The guesser's objective is to guess the word before the hangman is fully drawn. If they can guess all the letters in the word before the hangman is complete, they win. If the hangman is fully drawn before they guess the word, they lose.<br>
 
-- Rules:Usually, the word chooser provides a category or a hint to give the guesser an idea of what the word might be.
+- Rules: Usually, the word chooser provides a category or a hint to give the guesser an idea of what the word might be.<br>
 The guesser typically has a limited number of incorrect guesses before the hangman is fully drawn (e.g., 6 incorrect guesses).
