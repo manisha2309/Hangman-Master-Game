@@ -7,13 +7,13 @@ The word is represented by a row of dashes, with each dash representing a letter
 2. Manisha --Developer <br>
 3. Manshika --Tester <br>
 
-Instructions <br>
+Instructions: <br>
 
-Setup: One player ( i.e.the "system") decides a word and keeps it secret. They draw a series of dashes, each representing a letter in the word.<br>
+-Setup: One player ( i.e.the "system") decides a word and keeps it secret. They draw a series of dashes, each representing a letter in the word.<br>
 
-Guessing: The other player (the "guesser") starts guessing letters. If the guessed letter is in the word, the word chooser writes it in all the correct positions. If the guessed letter is not in the word, the word chooser adds a body part to the hangman scaffold (e.g., head, body, arms, legs).<br>
+-Guessing: The other player (the "guesser") starts guessing letters. If the guessed letter is in the word, the word chooser writes it in all the correct positions. If the guessed letter is not in the word, the word chooser adds a body part to the hangman scaffold (e.g., head, body, arms, legs).<br>
 
-Objective: The guesser's objective is to guess the word before the hangman is fully drawn. If they can guess all the letters in the word before the hangman is complete, they win. If the hangman is fully drawn before they guess the word, they lose.<br>
-Rules:
-Usually, the word chooser provides a category or a hint to give the guesser an idea of what the word might be.
+-Objective: The guesser's objective is to guess the word before the hangman is fully drawn. If they can guess all the letters in the word before the hangman is complete, they win. If the hangman is fully drawn before they guess the word, they lose.<br>:
+
+-Rules:Usually, the word chooser provides a category or a hint to give the guesser an idea of what the word might be.
 The guesser typically has a limited number of incorrect guesses before the hangman is fully drawn (e.g., 6 incorrect guesses).
