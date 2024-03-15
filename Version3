@@ -1,0 +1,77 @@
+import tkinter as tk
+from tkinter import messagebox
+import random
+
+class HangmanGame:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Hangman Game")
+        
+        self.word = self.get_word_input()
+        self.guessed_letters = []
+        self.attempts = 6
+
+        self.display = tk.StringVar()
+        self.display.set(self.display_word())
+
+        self.word_label = tk.Label(master, textvariable=self.display, font=('Arial', 24))
+        self.word_label.pack()
+
+        self.guess_label = tk.Label(master, text="Guess a letter:", font=('Arial', 18))
+        self.guess_label.pack()
+
+        self.guess_entry = tk.Entry(master, font=('Arial', 18))
+        self.guess_entry.pack()
+
+        self.submit_button = tk.Button(master, text="Submit", command=self.check_guess, font=('Arial', 18))
+        self.submit_button.pack()
+
+    def get_word_input(self):
+        word = input("Enter the word for others to guess: ").lower()
+        return word
+
+    def display_word(self):
+        display = ''
+        for letter in self.word:
+            if letter in self.guessed_letters:
+                display += letter
+            else:
+                display += '_'
+        return display
+
+    def check_guess(self):
+        guess = self.guess_entry.get().lower()
+
+        if len(guess) != 1 or not guess.isalpha():
+            messagebox.showwarning("Invalid Guess", "Please enter a single letter.")
+            return
+
+        if guess in self.guessed_letters:
+            messagebox.showwarning("Repeated Guess", "You've already guessed that letter.")
+            return
+
+        self.guessed_letters.append(guess)
+
+        if guess not in self.word:
+            self.attempts -= 1
+            messagebox.showinfo("Incorrect Guess", f"Incorrect guess. You have {self.attempts} attempts left.")
+        else:
+            messagebox.showinfo("Good Guess", "Good guess!")
+
+        self.display.set(self.display_word())
+
+        if '_' not in self.display.get():
+            messagebox.showinfo("Congratulations", f"Congratulations! You guessed the word: {self.word}")
+            self.master.destroy()
+
+        if self.attempts == 0:
+            messagebox.showinfo("Game Over", f"Sorry, you ran out of attempts. The word was: {self.word}")
+            self.master.destroy()
+
+def main():
+    root = tk.Tk()
+    hangman_game = HangmanGame(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
