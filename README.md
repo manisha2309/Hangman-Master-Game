@@ -17,3 +17,7 @@ Instructions: <br>
 
 - Rules: Usually, the word chooser provides a category or a hint to give the guesser an idea of what the word might be.<br>
 The guesser typically has a limited number of incorrect guesses before the hangman is fully drawn (e.g., 6 incorrect guesses).
+
+
+Version1:<br>
+In our Hangman game the test cases which we input in the code we faced the following outputs for different test cases:-
