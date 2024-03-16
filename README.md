@@ -20,4 +20,5 @@ The guesser typically has a limited number of incorrect guesses before the hangm
 
 
 Version1:<br>
-In our Hangman game the test cases which we input in the code we faced the following outputs for different test cases:-
+In Version 1 of our game, we encountered the following problems:-
+The player might find the game very basic, as it's not very interactive and visually appealing, which could be improved using a Graphical User Interface (GUI) using Tkinter. By adding the GUI version, it enhances the Hangman game by providing a more user-friendly interface, better feedback mechanisms, and improved interaction with the game. This version of the game lacks variety in word selection, making it predictable and reducing replay value over time. Furthermore, the player does not get instant feedback through printed messages in the console after every guess, which also makes it less user-friendly.
