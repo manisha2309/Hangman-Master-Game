@@ -20,13 +20,13 @@ The guesser typically has a limited number of incorrect guesses before the hangm
 
 
 Version1:<br>
-In Version 1 of our game, we encountered the following problems:-
+In Version 1 of our game, we encountered the following problems:-<br>
 The player might find the game very basic, as it's not very interactive and visually appealing, which could be improved using a Graphical User Interface (GUI) using Tkinter. By adding the GUI version, it enhances the Hangman game by providing a more user-friendly interface, better feedback mechanisms, and improved interaction with the game. This version of the game lacks variety in word selection, making it predictable and reducing replay value over time. Furthermore, the player does not get instant feedback through printed messages in the console after every guess, which also makes it less user-friendly.
 
 Version2:<br>
-In Version 2 of our game, we encountered the following problems:
+In Version 2 of our game, we encountered the following problems:-<br>
 After applying GUI using tkinter in this version the game interface is simple, with a text entry for guesses and basic message boxes for feedback. Some players might prefer a more visually engaging interface with graphics or animations to enhance the gaming experience.The game has a set number of attempts (6 in this case). Some players might find this limit challenging, while others might feel it is too restrictive. If the player guesses the word correctly, they will receive a "Congratulations" message. Some players might find this limit challenging, while others might feel it is too restrictive. Additionally, this version lacks varying difficulty levels, leading to players encountering repeated words during gameplay. Furthermore, there is a notable absence of a Scoreboard feature, which could enhance competitiveness and player engagement.
 
 Version3:<br>
-In Version 3 of our game we faced the following problems:-
+In Version 3 of our game we faced the following problems:-<br>
 Firstly, players expressed concern over the limited word choices available, which could lead to boredom over time. Additionally, the simplistic and unappealing graphics without colors failed to captivate players visually, further contributing to potential disinterest.Another significant drawback was the absence of a difficulty level selection feature. This omission deprived players of the opportunity to face the game's challenge to their preferences, potentially hindering their overall enjoyment and motivation to continue playing.Furthermore, players faced the lack of a clear scoring system, as they were unable to gauge their progress or compare their performance with themselves. This absence of feedback undermined the game's ability to provide a sense of accomplishment and progression, which are crucial elements in sustaining player interest and involvement.
