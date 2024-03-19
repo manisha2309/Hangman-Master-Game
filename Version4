@@ -147,9 +147,7 @@ class HangmanGUI:
         self.change_category()
         self.entry_guess.focus_set()
 
-        quit_game = messagebox.askyesno("Hangman", "Do you want to quit the game?")
-        if quit_game:
-            self.master.destroy()
+
 
 def main():
     root = tk.Tk()
