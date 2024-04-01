@@ -9,6 +9,33 @@ class HangmanGUI:
         self.master.geometry("600x400")
         self.master.configure(bg="#ADD8E6")  # Set background color here
 
+        self.setup_instructions()
+
+    def setup_instructions(self):
+        self.instructions_window = tk.Toplevel(self.master)
+        self.instructions_window.title("Instructions")
+        self.instructions_window.geometry("400x300")
+        self.instructions_window.configure(bg="#ADD8E6")
+
+        instructions_label = tk.Label(self.instructions_window, text="""Welcome to Hangman Game!
+        
+        Instructions:
+        1. Select a category from the dropdown menu.
+        2. Select the difficulty level.
+        3. Guess letters by typing them in the input field and pressing the Guess button.
+        4. You have a limited number of attempts based on the selected difficulty.
+        5. Try to guess the word before running out of attempts.
+        
+        Have fun playing Hangman!""", font=("Arial", 14), bg="#ADD8E6")
+        instructions_label.pack(pady=20)
+
+        start_button = tk.Button(self.instructions_window, text="Start Game", command=self.start_game, bg="#008CBA", fg="white", font=("Arial", 16))
+        start_button.pack(pady=10)
+
+    def start_game(self):
+        self.instructions_window.destroy()
+
+        # Set up the game UI here
         self.categories = {
             "Animals": ["dog", "cat", "elephant", "lion", "tiger", "giraffe", "zebra"],
             "Countries": ["usa", "uk", "france", "germany", "china", "india", "brazil"],
@@ -32,9 +59,6 @@ class HangmanGUI:
         self.guessed_letters = []
         self.attempts_left = self.difficulty_levels[self.selected_difficulty.get()]
 
-        self.setup_ui()
-
-    def setup_ui(self):
         # Category selection
         self.category_label = tk.Label(self.master, text="Select a Category:", font=("Arial", 20), bg="#ADD8E6")  # Set background color here and increase font size
         self.category_label.pack(pady=10)
@@ -147,17 +171,15 @@ class HangmanGUI:
         self.change_category()
         self.entry_guess.focus_set()
 
-
-
 def main():
     root = tk.Tk()
-    hangman_game = HangmanGUI(root)
+    HangmanGUI(root)
     root.mainloop()
 
 if __name__ == "__main__":
     main()
 
-
+       
         
-
+   
        
