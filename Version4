@@ -3,7 +3,7 @@ from tkinter import messagebox
 import random
 
 class HangmanGUI:
-    def __init__(self, master):
+    def _init_(self, master):
         self.master = master
         self.master.title("Hangman Game")
         self.master.geometry("600x400")
@@ -138,6 +138,12 @@ class HangmanGUI:
 
     def guess_letter(self):
         guess = self.entry_guess.get().lower()
+
+        # Validate the input
+        if not guess.isalpha() or len(guess) != 1:
+            messagebox.showerror("Invalid Input", "Please enter a valid single alphabetic character.")
+            return
+
         self.entry_guess.delete(0, tk.END)
 
         if guess in self.guessed_letters:
@@ -176,9 +182,11 @@ def main():
     HangmanGUI(root)
     root.mainloop()
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     main()
-
+      
+       
+       
        
         
    
